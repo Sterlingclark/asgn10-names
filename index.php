@@ -57,7 +57,19 @@ echo "</ul>";
 
 echo '<h2>All Valid Names</h2>';
 echo "<p>There are " . sizeof($validFullNames) . " valid names</p>";
+echo '<ul style="list-style-type:none">';
+  foreach($validFullNames as $validFullname) {
+    echo "<li>$validFullname</li>";
+  }
+echo "</ul>";
 
+echo '<h2>Unique Names</h2>';
+$uniqueValidNames = (array_unique($validFullNames));
+echo ("<p>There are " . sizeof($uniqueValidNames) . "Unique names</p>");
+echo '<ul style="list-style-type:none">';
+  foreach($uniqueValidNames as $uniqueValidNames) {
+    echo "<li>$uniqueValidNames</li>";
+  }
 
 
 ?>
