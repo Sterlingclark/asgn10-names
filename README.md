@@ -1,2 +1,2 @@
 # asgn10-names
-This is a short coding exercise for school
+This program is an exercise for school to practice PHP concepts: arrays and functions. 
