@@ -1,5 +1,5 @@
 <?php
-// include '';
+include 'fucntions/utility-functions.php';
 $fileName = 'names-short-list.txt';
 
 $lineNumber = 0;
@@ -10,18 +10,13 @@ $nextName = fgets($FH);
 
 while(!feof($FH)) {
   if($lineNumber % 2 == 0) {
-    $fullName[] = trim(substr($nextName, 0, strpos($nextName, " --00")));
+    $fullName[] = trim(substr($nextName, 0, strpos($nextName, " --")));
   }
 
 $lineNumber++;
 
 $nextName = fgets($FH);
 }
-
-
-
-
-
 
 // get all first names
 foreach($fullNames as $fullName) {
